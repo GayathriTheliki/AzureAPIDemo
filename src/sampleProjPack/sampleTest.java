@@ -41,7 +41,7 @@ public class sampleTest {
 				.then().assertThat().log().all().statusCode(200).extract().response().asString();
 		
 	
-		Assert.assertEquals("200","20");
+		Assert.assertEquals("200","200");
 		}
 		
 
