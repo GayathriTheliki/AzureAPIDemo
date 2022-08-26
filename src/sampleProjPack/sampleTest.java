@@ -22,7 +22,7 @@ public class sampleTest {
 		String getResponse=	given().log().all().queryParam("AuthorName", "rahulshetty")
 		
 		.relaxedHTTPSValidation().when().get("/Library/GetBook.php")
-		.then().assertThat().log().all().statusCode(200).extract().response().asString();
+		.then().assertThat().log().all().statusCode(20).extract().response().asString();
 	
 		//JsonPath js1=ReUsableMethods.rawToJson(getResponse);
 
